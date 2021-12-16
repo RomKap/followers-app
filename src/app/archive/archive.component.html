@@ -1,0 +1,10 @@
+<p>archive works!</p>
+ 
+    <ul>
+        <li *ngFor="let arc of archives">
+            <a [routerLink]="['/archive', arc.year, arc.month]" >
+            {{ arc.year}}/{{arc.month}}
+        </a>
+        </li>
+    </ul>
+ 
